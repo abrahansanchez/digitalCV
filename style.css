@@ -1,0 +1,142 @@
+body {
+    background-color: #336699;
+    color: #333; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 300vh;
+}
+
+a {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #edc92b;
+}
+
+/* Styling text */
+h1, h3 {
+    text-transform: uppercase;
+    color: #edc92b;
+    text-shadow: 1px 1px #fdfdfd;
+}
+
+/* Text Alignment */
+h1 {
+    text-align: center;
+}
+
+/* Use the universal selector (*) to target all elements on the page */
+* {
+    box-sizing: border-box;
+}
+
+/* This makes the profile pic rounded + border */
+img {
+    border-radius: 50%;
+    border: 2px solid #edc92b;
+}
+
+/* This is the Section */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Padding below the headers */
+h1, h3 {
+    padding-bottom: 10px;
+}
+
+/* Adjust the form elements */
+input, textarea, select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #edc92b;
+    outline: none;
+    width: 100%; /* Ensure full width */
+}
+
+
+input:focus, textarea:focus, select:focus {
+    border-color: #0cdf33;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #edc92b;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(15, 218, 90);
+    color: #ed2b92;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header img {
+        width: 100px; /* Smaller profile picture */
+        height: 100px; /* Adjust height */
+    }
+
+    h1, h3 {
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0; /* Reduce section margins */
+    }
+
+    input, textarea, select {
+        width: auto; /* Allow inputs to shrink */
+    }
+
+    button {
+        width: 100%; /* Full-width button */
+    }
+}
+/* Adding transition effects for buttons and links */
+a, button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button:hover {
+    background-color: rgb(15, 218, 90);
+    color: #ed2b92;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+/* Styling for header */
+.header {
+    background-color: #336699;
+}
+
